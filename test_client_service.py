@@ -9,11 +9,11 @@ clients = ClientIn(
 )
 
 
-def test_create_client(client: ClientIn = clients):
-    assert dict(client) == {'name': client.name,
-                              'surname': client.surname,
-                              'age': client.age,
-                              'phone': client.phone
+def test_create_client(clients: ClientIn = clients):
+    assert dict(clients) == {'name': clients.name,
+                              'surname': clients.surname,
+                              'age': clients.age,
+                              'phone': clients.phone
                               }
 
 
@@ -33,7 +33,7 @@ def test_update_client_age(clients: ClientIn = clients):
                               }
 
 
-def test_update_client_genre(employee: ClientIn = clients):
+def test_update_client_genre(clients: ClientIn = clients):
     client_upd = ClientOut(
         name='Anton',
         surname='Russian',
