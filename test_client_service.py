@@ -19,10 +19,10 @@ def test_create_client(clients: ClientIn = clients):
 
 def test_update_client_age(clients: ClientIn = clients):
     client_upd = ClientOut(
-        name='Anton',
-        surname='Russian',
-        age='21',
-        phone='+7123456789',
+        name='Anonim',
+        surname='Anonimus',
+        age='22',
+        phone='+7987654321',
         id=1
     )
     assert dict(client_upd) == {'name': clients.name,
@@ -35,10 +35,10 @@ def test_update_client_age(clients: ClientIn = clients):
 
 def test_update_client_genre(clients: ClientIn = clients):
     client_upd = ClientOut(
-        name='Anton',
-        surname='Russian',
-        age='21',
-        phone='+7123456789',
+        name='Anonim',
+        surname='Anonimus',
+        age='22',
+        phone='+7987654321',
         id=1
     )
     assert dict(client_upd) == {'name': clients.name,
